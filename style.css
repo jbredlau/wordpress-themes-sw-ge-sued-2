@@ -1,0 +1,333 @@
+/*
+ Theme Name:     sw-ge-sued-2
+ Description:    Theme fuer die Homepage von DJK Schwarz-Weiss Gelsenkirchen-Sued e.V. 
+                 Basiert auf den Themes twentyfourteen und the-falcon
+ Author:         Joerg Bredlau
+ Author URI:     http://www.bredlau.de
+ Template:       twentyfourteen
+ Version:        1.0
+ Tags:          black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+*/
+
+@import url("../twentyfourteen/style.css");
+
+/* Theme customization starts here */
+
+/* Keine Kategorien in Slider anzeigen */
+.slider .featured-content .cat-links {
+      display: none;
+    }
+
+@media screen and (min-width: 1008px) {
+
+    /* center the design */
+    .site {
+        margin: 0 auto;
+    }
+
+    #site-header {
+            position: relative;
+            z-index: 3;
+    }
+
+    .site-header {
+            background-color: #000;
+            max-width: 1260px;
+            position: relative;
+            width: 100%;
+            z-index: 4;
+    }
+
+    .header-main {
+            min-height: 48px;
+            padding: 0 10px;
+    }
+
+
+    /* Title und Logo */
+    .site-title {
+        float: left;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 120px;
+        margin: 0;
+        /* background: transparent url("images/djk_logo_rund_klein_schatten.png") no-repeat right top / 140px 140px; */
+        background-repeat: no-repeat;
+        background-image: url("images/djk_logo_rund_klein_schatten.png"); 
+        background-size: auto;
+        /* text-indent: -9000px; */
+        width: 160px;
+        background-position: 18px 10px;
+        /* Nav-toggle width + search-toggle width - gutter = 86px */
+        max-width: -webkit-calc(100% - 86px);
+        max-width:         calc(100% - 86px);
+        padding-bottom: 100px;
+    }
+
+    /* Title Font im Header */
+    .site-title a, .site-title a:hover {
+        font-size: 40px;
+        font-weight: normal;
+        /* font-family: 'Damion', cursive;*/  
+        /* font-family: times, Times New Roman, times-roman, georgia, serif; */ 
+	/* font-family: 'Tangerine', serif; */
+	letter-spacing: 2px;
+        font-variant: small-caps; text-transform: none; 
+  	text-shadow: 4px 4px 4px #aaa;
+        overflow: visible;
+        color: #ffffff;
+        padding: 0 0 0 200px;
+    }
+
+    /**
+     * Menu mit Navigation
+     * ---------------------------------------------------------------------------
+     */
+
+    /* Primary Navigation */
+
+    nav#primary-navigation {
+     padding-left: 224px;
+     top: 78px;
+    }
+
+    .primary-navigation {
+         float: right;
+         font-size: 13px;
+	 font-weight: bold;
+         margin: 0 1px 0 -12px;
+         padding: 0;
+         text-transform: uppercase;
+    }
+
+
+    .primary-navigation li {
+         border: 0;
+         display: inline-block;
+         height: 24px;
+         line-height: 48px;
+         position: relative;
+    }
+
+
+    .primary-navigation ul ul a {
+         padding: 10px 12px;
+         white-space: normal;
+    }
+
+
+
+    /**
+     * Sidebars
+     * -----------------------------------------------------------------------------
+     */
+
+    /* Secondary */
+
+    .site-description {
+            /* display: none; */
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+    }
+
+    #secondary {
+            background-color: #FFF;
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            /* clear: both; */
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: -1px;
+            padding: 80px 30px;
+            position: relative;
+            z-index: 2;
+    }
+
+    .site-navigation  {
+            margin-left: 190px;
+            padding: 45px 0 0 0;
+    }
+
+    .primary-sidebar {
+            padding-top: 0px;
+    }
+
+    /* Content Sidebar */
+
+    .content-sidebar {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing:    border-box;
+            box-sizing:         border-box;
+            color: #767676;
+            padding: 48px 10px 0;
+    }
+
+
+    /**
+     * Entry Content
+     * -----------------------------------------------------------------------------
+     */
+
+    .page .entry-title {
+      /* padding-top: 100px; */
+    }
+
+    .hentry {
+      padding-top: 100px;
+    }
+
+    /* Metatags in Footer Bereichen (insbesondere Posts) ausblenden */
+    footer.entry-meta {
+        display: none;
+    }
+
+    /* Seitenleisten */
+    .widget a {
+            color: #000;
+    }
+
+    .widget a:hover {
+            color: #41a62a;
+    }
+
+    .widget h1 {
+            color: #000;
+            font-size: 22px;
+            line-height: 1.0909090909;
+    }
+
+    .widget_recent_entries .post-date {
+            display: block;
+            color: #bababa;
+    }
+
+
+    /* change the background color for form inputs */
+    .footer-sidebar .widget input, .footer-sidebar .widget textarea, .primary-sidebar .widget input, .primary-sidebar .widget textarea {
+        background-color: #000;
+    }
+
+    /* enhancing the topbar */
+    #big-top {
+        display: block; }
+
+    #masthead {
+        width: 100%;
+        max-width: 100%;
+        height: 120px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    /* Suchbox */
+    .search-box-wrapper {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing:    border-box;
+            box-sizing:         border-box;
+            position: absolute;
+            top: 48px;
+            right: 0;
+            width: 40%;
+            z-index: 2;
+    }
+
+    .search-box {
+        margin-top: 26px;
+        padding: 10px;
+    }
+
+
+    .search-toggle {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .search-toggle.active {
+            background-color: #41a62a;
+            height: 74px;
+    }
+
+
+    .header-main {
+        display: inline;
+    }
+
+    nav#primary-navigation {
+        width: 100%;
+        display: block;
+        top: 40px;
+        left: 0px;
+        position: absolute;
+        padding-left: 30px;
+    }
+
+    .topbar-description {
+        color: #fff;
+        display: inline;
+        font-weight: bold;
+        font-size: 100%;
+        text-transform: lowercase;
+        line-height: 50px;
+        vertical-align: baseline;
+        margin-left: 20px;
+        font-style: italic;
+    }
+
+    .slider .featured-content .hentry {
+            -webkit-backface-visibility: hidden;
+            display: none;
+            position: relative;
+	    /* Bildhoehe im Slider */
+	    height: 700px;
+    }
+
+
+    ul.slider-direction-nav li a.slider-prev {
+       /* kein Text unter Slider-Pfeilen */
+            font-size: 0px;
+     }
+
+    ul.slider-direction-nav li a.slider-next {
+       /* kein Text unter Slider-Pfeilen */
+            font-size: 0px;
+     }
+
+    .slider .featured-content a {
+	    font-size: 16px;
+            font-weight: bold;
+    }
+
+    .slider-control-paging {
+            background-color: #000;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing:    border-box;
+            box-sizing:         border-box;
+            float: left;
+            list-style: none;
+            margin: -24px 0 0 0;
+            position: relative;
+            width: 100%;
+            z-index: 3;
+    }
+
+    .slider .featured-content .entry-header {
+        min-height: inherit;
+        padding: 1px 24px 50px;
+        position: absolute;
+        left: 0;
+        bottom: 80px;
+        width: 30%;
+        z-index: 3;
+    }
+
+   /* Statisches Textwidget */
+   .textwidget {
+	color: #000;
+    }
+    
+}
+
